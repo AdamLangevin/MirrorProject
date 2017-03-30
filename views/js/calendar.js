@@ -122,6 +122,11 @@ function listEvents(auth) {
       for (var i = 0; i < events.length; i++) {
         var event = events[i];
         var start = event.start.dateTime || event.start.date;
+        $("#note-list").append('<div id="note">\
+          <li>\
+            '+event[i]+'\
+          </li>\
+        </div>');
         console.log('%s - %s', start, event.summary);
       }
     }
