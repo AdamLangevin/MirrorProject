@@ -19,7 +19,7 @@ window.onload = function(){
     });
   } else {
     $("#headline-list").append('<div id="connection-error">\
-    <a>No Internet Connection, Failure</a>\
+    <a id="conct-error">No Internet Connection, Failure</a>\
     </div>');
   }
 };
