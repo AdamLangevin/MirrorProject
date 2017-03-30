@@ -17,7 +17,7 @@ var mainRoutes   = require('./routes/index');
 var app         = express();
 var port        = 8080;
 
-app.use(favicon(path.join(__dirname, 'public', 'img', 'start.jpg')));
+//app.use(favicon(path.join(__dirname, 'public', 'img', 'start.jpg')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
