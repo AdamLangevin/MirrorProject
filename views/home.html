@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="views/layouts/home.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="views/jquery.min.js"></script>
+    <script data-main="views/js/start.js" scr="views/js/require.js"></script>
+  <!--  <script type="text/javascript">window.$ = window.jQuery = require('jquery.min.js');</script> -->
+  </head>
+  <body>
+    <div class="main-container">
+      <section id = "S1" class = "homeSection">
+        <div class = "weatherSection-container">
+          <div id="weather-container">
+            <canvas id="weather-box" width="150" height="150"></canvas>
+            <p id="weather"></p>
+            <div id="scroll-button-container">
+              <div id="scroll-button-padded">
+                <div id="news-button">
+                  <a class="button" id="news-btn" href="/news">News</a>
+                </div>
+                <div id="mid-block"></div>
+                <div id="reminders">
+                  <a class="button" id="reminders-btn" href="/reminders">Notes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="clock">
+          <p id="time"></p>
+          <p id="date"></p>
+        </div>
+      </section>
+     <script type="text/javascript" src="views/js/start.js"></script>
+    </div>
+  </body>
+</html>
