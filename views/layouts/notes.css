@@ -1,0 +1,28 @@
+section {
+  background: #000000;
+  color: white;
+  width: inherit;
+  height: 100vh;
+}
+body {
+  width:100vw;
+  height:100vh;
+  margin:0px;
+
+}
+#S3{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+#main-container{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 20vh;
+  padding-left: 5vw;
+}
+#notes{
+  color: white;
+  height: 80vh;
+  width: 95vw;
+}
