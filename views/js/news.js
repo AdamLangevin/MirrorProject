@@ -3,20 +3,23 @@ window.onload = function(){
   var arts = [];
   var apiKey = "cba595c77c174accb49639883a82a73e";
   "https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey="+apiKey
-//  https://news.google.com/news?ned=ca&output=rss
 
+  if(true){
+    $.get("https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey="+apiKey, function(res){
+      var data = res;
+      var art = res.articles;
 
-  $.get("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey="+apiKey, function(){
-    console.log("HI");
-  }).done(function(data){
-    console.log("success");
-    var results = '<li id="result"></li>'
-    $.each(function(){
-      // var el = $(this);
-      // console.log("title: " + el.find("title").text());
-      // $("#headline").text(el.find("title").text());
+      $.each(art, function(i,k) {
+        $("#headline-list").append('<div id="healines">\
+          <li>\
+            '+k.title+'\
+          </li>\
+        </div>');
+      });
     });
-  });
-    //var news = res;
-
+  } else {
+    $("#headline-list").append('<div id="connection-error">\
+    <a id="conct-error">No Internet Connection, Failure</a>\
+    </div>');
+  }
 };
