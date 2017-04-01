@@ -24,6 +24,10 @@ body {
 #weather-container{
   height: 80vh;
 }
+#weather-box{
+  padding-top:10px;
+  padding-left:10px;
+}
 #weather{
   font-size: 35px;
 }

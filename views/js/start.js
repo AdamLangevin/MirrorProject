@@ -10,13 +10,15 @@ window.onload = function(){
             var temp = weather.currently.temperature;
             var summary = weather.currently.summary;
             $("#weather").text(parseInt(temp)+"°C | "+summary);
-            //drawIcon(weather.currently.icon);
+            drawIcon(weather.currently.icon);
     });
 };
 
-  /*function drawIcon(icon){
-
-  };*/
+  function drawIcon(icon){
+    var skycons = new Skycons({"color": "white"});
+    skycons.add("weather-box",icon);
+    skycons.play();
+  };
 
 function setTime(){
   var date = new Date();
