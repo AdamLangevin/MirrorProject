@@ -11,9 +11,16 @@
     <section id ="S3" class = "reminders-panel">
       <a href="#" id="authorize-button" onclick="handleAuthClick();">Login</a>
       <div id="main-container" class = "reminders-panel-continer">
+        <div id="button-container">
+          <div id="scroll-button-container">
+            <div id="left-button">
+              <a class="button" id="home-btn" href="/home">Home</a>
+            </div>
+          </div>
+        </div>
         <div id="main-notes-container">
           <div id="notes">
-            <p>Google Calendar API</p>
+            <p id="event-headline">Google Calendar API</p>
             <ul id="events"></ul>
           </div>
           <script type="text/javascript" src="views/js/notes.js"></script>
