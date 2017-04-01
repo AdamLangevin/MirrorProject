@@ -24,5 +24,6 @@ router.get('/off', (req, res, next) => res.sendFile(path.join(__dirname,'../view
 router.get('/reminders', (req, res, next) => res.sendFile(path.join(__dirname,'../views/reminders.html')));
 router.get('/news', (req, res, next)=> res.sendFile(path.join(__dirname,'../views/news.html')));
 router.get('/', (req, res, next) => res.sendFile(path.join(__dirname,'../views/home.html')));
+router.get('/home',(req,res,next) => res.sendFile(path.join(__dirname, '../views/home.html')));
 
 module.exports = router;

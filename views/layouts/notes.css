@@ -1,0 +1,66 @@
+section {
+  background: #000000;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  width:100vw;
+  height:100vh;
+  margin:0px;
+
+}
+#S3{
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}
+#authorize-button{
+  height: 20px;
+  width: 50px;
+  color:  white;
+}
+#main-container{
+  height: 75vh;
+  width: 100vw;
+  padding-top: 20vh;
+  display: flex;
+}
+#button-container{
+  width: 5vw;
+  height: 50vh;
+  padding-right: 10vw;
+  padding-top:10.5vh;
+}
+#scroll-button-container{
+  height: 30vh;
+}
+#left-button{
+  height: 30vh;
+}
+#home-btn{
+  background-color: #595959;
+  border: none;
+  color: white;
+  padding-top: 80px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  height: 15vh;
+  width: 3.5vw;
+}
+#main-notes-container{
+  height: 100vh;
+  width:  100vw;
+}
+#notes{
+  color: white;
+  height: 75vh;
+  width: 80vw;
+}
+#event-headline{
+  font-size: 30px;
+}
+#events{
+  font-size: 25px;
+}
