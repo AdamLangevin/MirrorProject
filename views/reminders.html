@@ -4,15 +4,22 @@
     <link rel="stylesheet" href="views/layouts/notes.css">
     <meta charset="UTF-8">
     <script type="text/javascript" src="views/jquery.min.js"></script>
+    <script type="text/javascript" src="views/js/moment.min.js"></script>
+    <script type="text/javascript" src="views/js/moment.js"></script>
   </head>
   <body>
     <section id ="S3" class = "reminders-panel">
+      <a href="#" id="authorize-button" onclick="handleAuthClick();">Login</a>
       <div id="main-container" class = "reminders-panel-continer">
         <div id="main-notes-container">
-          <div id="notes"></div>
+          <div id="notes">
+            <p>Google Calendar API</p>
+            <ul id="events"></ul>
+          </div>
+          <script type="text/javascript" src="views/js/notes.js"></script>
+          <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="views/js/calendar.js"></script>
   </body>
-</html> 
+</html>
