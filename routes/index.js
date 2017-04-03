@@ -8,7 +8,7 @@ var debug = new (require('../assests/js/dev-helpers'))(__filename);
 var index = path.join(__dirname, '..', 'views', 'index.html');
 
 
-router.get('/*', (req, res, next) => {
+router.get('/*', function(req, res, next) {
   debug.log(debug.msg(8, req.headers.host));
   if(!(req.headers.host === 'mirror.ca' || req.headers.host ==='192.168.0.188')) {
     if(process.env.NODE_ENV !== 'development'){

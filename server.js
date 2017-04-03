@@ -29,14 +29,14 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/', mainRoutes);
 
 
-app.use((req, res, next) => {
+app.use(function(req, res, next) {
   console.log(req.url);
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
-app.listen(port, (err)=> {
+app.listen(port, function(err) {
   if(err){
     return console.log('Error ', err);
   }

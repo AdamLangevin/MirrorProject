@@ -27,3 +27,5 @@ function setTime(){
   $("#time").text(t);
   $("#date").text(date.toDateString());
 };
+
+//https://crossorigin.me/
