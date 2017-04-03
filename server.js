@@ -13,11 +13,12 @@ var seo         = require('express-seo');
 var session     = require('express-session');
 
 var mainRoutes   = require('./routes/index');
+var skycons     = require('./views/js/skycons/skycons')
 
 var app         = express();
 var port        = 8080;
 
-app.use(favicon(path.join(__dirname, 'public', 'img', 'start.jpg')));
+//app.use(favicon(path.join(__dirname, 'public', 'img', 'start.jpg')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
