@@ -41,7 +41,7 @@ app.listen(port, function(err) {
     return console.log('Error ', err);
   }
 
-  console.log(`Server listening on ${port}`);
+  console.log('Server listening on '+port);
 });
 
 module.exports = app;
