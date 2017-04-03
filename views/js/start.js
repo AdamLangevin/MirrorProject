@@ -29,3 +29,4 @@ function setTime(){
 };
 
 //https://crossorigin.me/
+//http://cors.io/?
