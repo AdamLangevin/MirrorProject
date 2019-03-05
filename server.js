@@ -12,7 +12,7 @@ var seo         = require('express-seo');
 
 var session     = require('express-session');
 
-var mainRoutes   = require('./routes/index');
+var mainRoutes  = require('./routes/index');
 var skycons     = require('./views/js/skycons/skycons')
 
 var app         = express();
